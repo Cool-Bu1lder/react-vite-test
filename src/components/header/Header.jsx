@@ -1,16 +1,14 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 
 import "./Header.css";
 
-// TODO: make navbar more like bootstrap5 example for responsiveness
 function Header() {
   return (
     <>
-      <header className="p-3 text-bg-dark">
+      <header className="p-3 text-bg-dark" data-bs-theme="dark">
         <Container>
           <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
             {/* Brand Icon */}
@@ -30,7 +28,7 @@ function Header() {
             {/* Nav Links */}
             <Nav
               as="ul"
-              className="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+              className="col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
             >
               <Nav.Item as="li">
                 <Nav.Link href="#" className="px-2 text-secondary">
@@ -71,6 +69,7 @@ function Header() {
                 aria-label="Search"
               />
             </Form>
+
             {/* Auth Buttons */}
             <div className="text-end">
               <Button variant="outline-light" className="me-2">
