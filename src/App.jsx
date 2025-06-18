@@ -1,22 +1,21 @@
 import "./App.css";
 import Button from "react-bootstrap/Button";
 import Stack from "react-bootstrap/Stack";
+import { Routes, Route } from "react-router";
 
 import Header from "./components/header/Header";
+
+import Home from "./pages/home/Home";
+import About from "./pages/About";
 
 function App() {
   return (
     <>
-      <Header/>
-      <p>Hello World</p>
-      <Stack direction="horizontal" gap={2}>
-        <Button as="a" variant="primary">
-          Button as link
-        </Button>
-        <Button as="a" variant="success">
-          Button as link
-        </Button>
-      </Stack>
+      <Header />
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="about" element={<About />} />
+      </Routes>
     </>
   );
 }
