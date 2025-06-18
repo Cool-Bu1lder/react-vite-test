@@ -13,8 +13,10 @@ If you are developing a production application, we recommend using TypeScript wi
 
 Sources:
 
-- [bootstrap5.3](https://getbootstrap.com/docs/5.3/examples/)
+- [vite](https://vite.dev/)
 
 - [react-bootstrap](https://react-bootstrap.netlify.app/)
 
 - [w3schools react](https://www.w3schools.com/REACT/default.asp)
+
+- [bootstrap5.3](https://getbootstrap.com/docs/5.3/examples/)
