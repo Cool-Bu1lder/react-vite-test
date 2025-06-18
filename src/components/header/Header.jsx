@@ -6,61 +6,82 @@ import Button from "react-bootstrap/Button";
 
 import "./Header.css";
 
+// TODO: make navbar more like bootstrap5 example for responsiveness
 function Header() {
   return (
-    <Navbar bg="dark" data-bs-theme="dark">
-      <Container>
-        {/* Navbar Icon */}
-        <Navbar.Brand href="#home">
-          <img
-            src="/vite.svg"
-            width="30"
-            height="30"
-            className="d-inline-block align-top"
-            alt="React Bootstrap logo"
-          />
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          {/* Main Nav Routes */}
-          <Nav className="me-auto">
-            <Nav.Link className="text-secondary" href="#home">
-              Home
-            </Nav.Link>
-            <Nav.Link className="text-white" href="#features">
-              Features
-            </Nav.Link>
-            <Nav.Link className="text-white" href="#pricing">
-              Pricing
-            </Nav.Link>
-            <Nav.Link className="text-white" href="#faqs">
-              FAQs
-            </Nav.Link>
-            <Nav.Link className="text-white" href="#about">
-              About
-            </Nav.Link>
-          </Nav>
+    <>
+      <header className="p-3 text-bg-dark">
+        <Container>
+          <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            {/* Brand Icon */}
+            <a
+              href="/"
+              className="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none"
+            >
+              <img
+                src="/vite.svg"
+                alt="Logo"
+                width="40"
+                height="32"
+                className="me-2"
+              />
+            </a>
 
-          {/* Search Bar */}
-          <Form className="d-flex">
-            <Form.Control
-              type="search"
-              placeholder="Search..."
-              className="me-2"
-              aria-label="Search"
-            />
-          </Form>
+            {/* Nav Links */}
+            <Nav
+              as="ul"
+              className="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+            >
+              <Nav.Item as="li">
+                <Nav.Link href="#" className="px-2 text-secondary">
+                  Home
+                </Nav.Link>
+              </Nav.Item>
+              <Nav.Item as="li">
+                <Nav.Link href="#" className="px-2 text-white">
+                  Features
+                </Nav.Link>
+              </Nav.Item>
+              <Nav.Item as="li">
+                <Nav.Link href="#" className="px-2 text-white">
+                  Pricing
+                </Nav.Link>
+              </Nav.Item>
+              <Nav.Item as="li">
+                <Nav.Link href="#" className="px-2 text-white">
+                  FAQs
+                </Nav.Link>
+              </Nav.Item>
+              <Nav.Item as="li">
+                <Nav.Link href="#" className="px-2 text-white">
+                  About
+                </Nav.Link>
+              </Nav.Item>
+            </Nav>
 
-          {/* Login and Sign up Buttons */}
-          <Navbar.Text>
-            <Button variant="outline-light" className="me-2">
-              Login
-            </Button>
-            <Button variant="warning">Signup</Button>
-          </Navbar.Text>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+            {/* Search Bar */}
+            <Form
+              className="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3"
+              role="search"
+            >
+              <Form.Control
+                type="search"
+                placeholder="Search..."
+                className="form-control-dark text-bg-dark"
+                aria-label="Search"
+              />
+            </Form>
+            {/* Auth Buttons */}
+            <div className="text-end">
+              <Button variant="outline-light" className="me-2">
+                Login
+              </Button>
+              <Button variant="warning">Sign-up</Button>
+            </div>
+          </div>
+        </Container>
+      </header>
+    </>
   );
 }
 
