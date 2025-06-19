@@ -1,12 +1,11 @@
 /* TODO: 
-    - Use React Router and nav bar 
     - Use React-bootstrap
     - Separate into components
-    - download bootstrap example for images
-    - check css?
 
     [for hero section] - use another example
 */
+
+import './Features.css'
 
 function Features() {
   return (
@@ -17,7 +16,7 @@ function Features() {
           <div className="col">
             <div
               className="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-              style={{ backgroundImage: "url('unsplash-photo-1.jpg');" }}
+              style={{ backgroundImage: "url('unsplash-photo-1.jpg')" }}
             >
               <div className="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
                 <h3 className="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
@@ -26,7 +25,7 @@ function Features() {
                 <ul className="d-flex list-unstyled mt-auto">
                   <li className="me-auto">
                     <img
-                      src="https://github.com/twbs.png"
+                      src="/twbs.png"
                       alt="Bootstrap"
                       width="32"
                       height="32"
@@ -34,27 +33,11 @@ function Features() {
                     />
                   </li>
                   <li className="d-flex align-items-center me-3">
-                    <svg
-                      className="bi me-2"
-                      width="1em"
-                      height="1em"
-                      role="img"
-                      aria-label="Location"
-                    >
-                      <use xlinkHref="#geo-fill"></use>
-                    </svg>
+                    <i class="bi bi-geo-fill me-2"></i>
                     <small>Earth</small>
                   </li>
                   <li className="d-flex align-items-center">
-                    <svg
-                      className="bi me-2"
-                      width="1em"
-                      height="1em"
-                      role="img"
-                      aria-label="Duration"
-                    >
-                      <use xlinkHref="#calendar3"></use>
-                    </svg>
+                    <i class="bi bi-calendar3 me-2"></i>
                     <small>3d</small>
                   </li>
                 </ul>
@@ -64,7 +47,7 @@ function Features() {
           <div className="col">
             <div
               className="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-              style={{ backgroundImage: "url('unsplash-photo-2.jpg');" }}
+              style={{ backgroundImage: "url('unsplash-photo-2.jpg')" }}
             >
               <div className="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
                 <h3 className="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
@@ -73,7 +56,7 @@ function Features() {
                 <ul className="d-flex list-unstyled mt-auto">
                   <li className="me-auto">
                     <img
-                      src="https://github.com/twbs.png"
+                      src="/twbs.png"
                       alt="Bootstrap"
                       width="32"
                       height="32"
@@ -81,27 +64,11 @@ function Features() {
                     />
                   </li>
                   <li className="d-flex align-items-center me-3">
-                    <svg
-                      className="bi me-2"
-                      width="1em"
-                      height="1em"
-                      role="img"
-                      aria-label="Location"
-                    >
-                      <use xlinkHref="#geo-fill"></use>
-                    </svg>
+                    <i class="bi bi-geo-fill me-2"></i>
                     <small>Pakistan</small>
                   </li>
                   <li className="d-flex align-items-center">
-                    <svg
-                      className="bi me-2"
-                      width="1em"
-                      height="1em"
-                      role="img"
-                      aria-label="Duration"
-                    >
-                      <use xlinkHref="#calendar3"></use>
-                    </svg>
+                    <i class="bi bi-calendar3 me-2"></i>
                     <small>4d</small>
                   </li>
                 </ul>
@@ -111,7 +78,7 @@ function Features() {
           <div className="col">
             <div
               className="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-              style={{ backgroundImage: "url('unsplash-photo-3.jpg');" }}
+              style={{ backgroundImage: "url('unsplash-photo-3.jpg')" }}
             >
               <div className="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
                 <h3 className="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
@@ -120,7 +87,7 @@ function Features() {
                 <ul className="d-flex list-unstyled mt-auto">
                   <li className="me-auto">
                     <img
-                      src="https://github.com/twbs.png"
+                      src="/twbs.png"
                       alt="Bootstrap"
                       width="32"
                       height="32"
@@ -128,27 +95,11 @@ function Features() {
                     />
                   </li>
                   <li className="d-flex align-items-center me-3">
-                    <svg
-                      className="bi me-2"
-                      width="1em"
-                      height="1em"
-                      role="img"
-                      aria-label="Location"
-                    >
-                      <use xlinkHref="#geo-fill"></use>
-                    </svg>
+                    <i class="bi bi-geo-fill me-2"></i>
                     <small>California</small>
                   </li>
                   <li className="d-flex align-items-center">
-                    <svg
-                      className="bi me-2"
-                      width="1em"
-                      height="1em"
-                      role="img"
-                      aria-label="Duration"
-                    >
-                      <use xlinkHref="#calendar3"></use>
-                    </svg>
+                    <i class="bi bi-calendar3 me-2"></i>
                     <small>5d</small>
                   </li>
                 </ul>
