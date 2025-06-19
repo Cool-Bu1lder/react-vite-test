@@ -52,9 +52,14 @@ function Header() {
                 </NavLink>
               </Nav.Item>
               <Nav.Item as="li">
-                <Nav.Link href="#" className="px-2 text-white">
+                <NavLink
+                  to="/pricing"
+                  className={({ isActive }) =>
+                    `px-2 nav-link ${isActive ? 'text-secondary' : 'text-white'}`
+                  }
+                >
                   Pricing
-                </Nav.Link>
+                </NavLink>
               </Nav.Item>
               <Nav.Item as="li">
                 <Nav.Link href="#" className="px-2 text-white">

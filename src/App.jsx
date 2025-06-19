@@ -1,6 +1,4 @@
 import './App.css'
-import Button from 'react-bootstrap/Button'
-import Stack from 'react-bootstrap/Stack'
 import { Routes, Route } from 'react-router'
 
 import Header from './components/header/Header'
@@ -8,6 +6,10 @@ import Header from './components/header/Header'
 import Home from './pages/home/Home'
 import About from './pages/About'
 import Features from './pages/features/Features'
+import Pricing from './pages/pricing/Pricing'
+
+// TODO: Use <header> <main> <footer>
+// TODO: Add Footer
 
 function App() {
   return (
@@ -16,6 +18,7 @@ function App() {
       <Routes>
         <Route index element={<Home />} />
         <Route path="features" element={<Features />} />
+        <Route path="pricing" element={<Pricing />} />
         <Route path="about" element={<About />} />
       </Routes>
     </>
