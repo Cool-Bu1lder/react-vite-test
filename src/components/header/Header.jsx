@@ -2,6 +2,7 @@ import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
+import { NavLink, Link } from 'react-router'
 
 import './Header.css'
 
@@ -12,8 +13,8 @@ function Header() {
         <Container>
           <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
             {/* Brand Icon */}
-            <a
-              href="/"
+            <Link
+              to="/"
               className="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none"
             >
               <img
@@ -23,7 +24,7 @@ function Header() {
                 height="32"
                 className="me-2"
               />
-            </a>
+            </Link>
 
             {/* Nav Links */}
             <Nav
@@ -31,14 +32,24 @@ function Header() {
               className="col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
             >
               <Nav.Item as="li">
-                <Nav.Link href="#" className="px-2 text-secondary">
+                <NavLink
+                  to="/"
+                  className={({ isActive }) =>
+                    `px-2 nav-link ${isActive ? 'text-secondary' : 'text-white'}`
+                  }
+                >
                   Home
-                </Nav.Link>
+                </NavLink>
               </Nav.Item>
               <Nav.Item as="li">
-                <Nav.Link href="#" className="px-2 text-white">
+                <NavLink
+                  to="/features"
+                  className={({ isActive }) =>
+                    `px-2 nav-link ${isActive ? 'text-secondary' : 'text-white'}`
+                  }
+                >
                   Features
-                </Nav.Link>
+                </NavLink>
               </Nav.Item>
               <Nav.Item as="li">
                 <Nav.Link href="#" className="px-2 text-white">
