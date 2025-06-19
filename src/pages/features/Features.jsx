@@ -5,17 +5,25 @@
     [for hero section] - use another example
 */
 
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+import Card from 'react-bootstrap/Card'
+
 import './Features.css'
 
 function Features() {
   return (
     <>
-      <div className="container px-4 py-5" id="custom-cards">
+      <Container className="px-4 py-5" id="custom-cards">
         <h2 className="pb-2 border-bottom">Custom cards</h2>
-        <div className="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-          <div className="col">
-            <div
-              className="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+        {/* ORIGINAL:
+        <Row className="row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+        CONVERTED TO: */}
+        <Row lg={3} xs={1} className="align-items-stretch g-4 py-5">
+          <Col>
+            <Card
+              className="card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
               style={{ backgroundImage: "url('unsplash-photo-1.jpg')" }}
             >
               <div className="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
@@ -42,11 +50,12 @@ function Features() {
                   </li>
                 </ul>
               </div>
-            </div>
-          </div>
-          <div className="col">
-            <div
-              className="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            </Card>
+          </Col>
+
+          <Col>
+            <Card
+              className="card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
               style={{ backgroundImage: "url('unsplash-photo-2.jpg')" }}
             >
               <div className="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
@@ -73,11 +82,12 @@ function Features() {
                   </li>
                 </ul>
               </div>
-            </div>
-          </div>
-          <div className="col">
-            <div
-              className="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            </Card>
+          </Col>
+
+          <Col>
+            <Card
+              className="card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
               style={{ backgroundImage: "url('unsplash-photo-3.jpg')" }}
             >
               <div className="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
@@ -104,10 +114,10 @@ function Features() {
                   </li>
                 </ul>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
+            </Card>
+          </Col>
+        </Row>
+      </Container>
     </>
   )
 }
