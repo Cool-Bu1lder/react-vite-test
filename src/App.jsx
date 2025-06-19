@@ -1,13 +1,13 @@
-import "./App.css";
-import Button from "react-bootstrap/Button";
-import Stack from "react-bootstrap/Stack";
-import { Routes, Route } from "react-router";
+import './App.css'
+import Button from 'react-bootstrap/Button'
+import Stack from 'react-bootstrap/Stack'
+import { Routes, Route } from 'react-router'
 
-import Header from "./components/header/Header";
+import Header from './components/header/Header'
 
-import Home from "./pages/home/Home";
-import About from "./pages/About";
-import Features from "./pages/features/Features";
+import Home from './pages/home/Home'
+import About from './pages/About'
+import Features from './pages/features/Features'
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
         <Route path="about" element={<About />} />
       </Routes>
     </>
-  );
+  )
 }
 
-export default App;
+export default App

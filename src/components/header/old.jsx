@@ -1,10 +1,10 @@
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
+import Container from 'react-bootstrap/Container'
+import Nav from 'react-bootstrap/Nav'
+import Navbar from 'react-bootstrap/Navbar'
+import Form from 'react-bootstrap/Form'
+import Button from 'react-bootstrap/Button'
 
-import "./Header.css";
+import './Header.css'
 
 // TODO: make navbar more like bootstrap5 example for responsiveness
 function Header() {
@@ -27,7 +27,7 @@ function Header() {
             {/* Main Nav Routes */}
             <Nav
               className="me-auto my-2 my-lg-0"
-              style={{ maxHeight: "100px" }}
+              style={{ maxHeight: '100px' }}
               navbarScroll
             >
               <Nav.Link className="text-secondary" href="/">
@@ -68,7 +68,7 @@ function Header() {
         </Container>
       </Navbar>
     </>
-  );
+  )
 }
 
-export default Header;
+export default Header

@@ -158,7 +158,7 @@ function Features() {
         </div>
       </div>
     </>
-  );
+  )
 }
 
-export default Features;
+export default Features

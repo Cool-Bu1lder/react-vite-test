@@ -1,9 +1,9 @@
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
+import Container from 'react-bootstrap/Container'
+import Nav from 'react-bootstrap/Nav'
+import Form from 'react-bootstrap/Form'
+import Button from 'react-bootstrap/Button'
 
-import "./Header.css";
+import './Header.css'
 
 function Header() {
   return (
@@ -81,7 +81,7 @@ function Header() {
         </Container>
       </header>
     </>
-  );
+  )
 }
 
-export default Header;
+export default Header

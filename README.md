@@ -19,6 +19,8 @@ Sources:
 
 - [react-router](https://reactrouter.com/start/declarative/installation)
 
+- [eslint+prettier](https://www.geeksforgeeks.org/javascript/how-to-set-up-vite-with-eslint-and-prettier/)
+
 - [w3schools react](https://www.w3schools.com/REACT/default.asp)
 
 - [bootstrap5.3](https://getbootstrap.com/docs/5.3/examples/)
