@@ -2,6 +2,7 @@ import './App.css'
 import { Routes, Route } from 'react-router'
 
 import Header from './components/header/Header'
+import Footer from './components/footer/Footer'
 
 import Home from './pages/home/Home'
 import About from './pages/About'
@@ -21,6 +22,7 @@ function App() {
         <Route path="pricing" element={<Pricing />} />
         <Route path="about" element={<About />} />
       </Routes>
+      <Footer />
     </>
   )
 }
