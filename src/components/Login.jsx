@@ -4,7 +4,7 @@ function Login() {
   return (
     <>
       <Form>
-        <h1 class="h3 mb-3 fw-normal">Login</h1>
+        <h1 className="h3 mb-3 fw-normal">Login</h1>
         <FloatingLabel controlId="floatingInput" label="Email address">
           <Form.Control type="email" placeholder="name@example.com" />
         </FloatingLabel>
