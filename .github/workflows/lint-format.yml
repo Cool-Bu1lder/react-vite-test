@@ -30,4 +30,4 @@ jobs:
         run: npm run lint
 
       - name: Run Prettier format Checkout
-        run: npm format:check
+        run: npm run format:check
