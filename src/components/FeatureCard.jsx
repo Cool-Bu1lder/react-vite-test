@@ -1,5 +1,7 @@
 import Card from 'react-bootstrap/Card'
 
+import twbs from '../assets/twbs.png'
+
 function FeatureCard({ title, location, time, imageUrl }) {
   return (
     <Card
@@ -11,7 +13,7 @@ function FeatureCard({ title, location, time, imageUrl }) {
         <ul className="d-flex list-unstyled mt-auto">
           <li className="me-auto">
             <img
-              src="/twbs.png"
+              src={twbs}
               alt="Bootstrap"
               width="32"
               height="32"
@@ -19,11 +21,11 @@ function FeatureCard({ title, location, time, imageUrl }) {
             />
           </li>
           <li className="d-flex align-items-center me-3">
-            <i class="bi bi-geo-fill me-2"></i>
+            <i className="bi bi-geo-fill me-2"></i>
             <small>{location}</small>
           </li>
           <li className="d-flex align-items-center">
-            <i class="bi bi-calendar3 me-2"></i>
+            <i className="bi bi-calendar3 me-2"></i>
             <small>{time}</small>
           </li>
         </ul>

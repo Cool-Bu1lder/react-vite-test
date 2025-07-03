@@ -6,6 +6,8 @@ import { NavLink, Link } from 'react-router'
 
 import './Header.css'
 
+import icon from '../../assets/vite.svg'
+
 function Header() {
   return (
     <>
@@ -18,7 +20,7 @@ function Header() {
               className="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none"
             >
               <img
-                src="/vite.svg"
+                src={icon}
                 alt="Logo"
                 width="40"
                 height="32"

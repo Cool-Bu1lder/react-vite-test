@@ -2,13 +2,15 @@ import Container from 'react-bootstrap/Container'
 import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button'
 
+import icon from '../../assets/vite.svg'
+
 function Home() {
   return (
     <>
       <Container className="px-4 p5 my-5 text-center">
         <img
           className="d-block mx-auto mb-4"
-          src="vite.svg"
+          src={icon}
           alt=""
           width="72"
           height="57"
