@@ -88,10 +88,14 @@ function Header() {
 
             {/* Auth Buttons */}
             <div className="text-end">
-              <Button variant="outline-light" className="me-2">
-                Login
-              </Button>
-              <Button variant="warning">Sign-up</Button>
+              <Link to="/login">
+                <Button variant="outline-light" className="me-2">
+                  Login
+                </Button>
+              </Link>
+              <Link to="/signup">
+                <Button variant="warning">Sign-up</Button>
+              </Link>
             </div>
           </div>
         </Container>
