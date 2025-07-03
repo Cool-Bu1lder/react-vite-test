@@ -24,3 +24,5 @@ Sources:
 - [w3schools react](https://www.w3schools.com/REACT/default.asp)
 
 - [bootstrap5.3](https://getbootstrap.com/docs/5.3/examples/)
+
+- [deploy gh-pages](https://vite.dev/guide/static-deploy)
